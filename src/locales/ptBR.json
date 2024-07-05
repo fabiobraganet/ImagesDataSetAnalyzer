@@ -1,0 +1,34 @@
+{
+  "welcome": "Bem-vindo",
+  "description": "Este é um exemplo de i18next em React.",
+  "menu": {
+    "notifications": "Notificações",
+    "language": "Idioma",
+    "theme": "Tema",
+    "modules": "Módulos",
+    "profile": "Perfil",
+    "settings": "Configurações",
+    "logout": "Sair"
+  },
+  "drawerLanguages": {
+    "title": "Selecionar Idioma",
+    "english": "Inglês (EUA)",
+    "portuguese": "Português (BR)",
+    "welcomeMessage": "Bem-vindo",
+    "dateFormat": "Formato de Data:<br />{{date}}",
+    "currencyFormat": "Formato de Moeda:<br />{{currency}}",
+    "applyButton": "Aplicar Idioma"
+  },
+  "drawerThemes": {
+    "title": "Selecionar Tema",
+    "lightTheme": {
+      "name": "Tema Claro",
+      "description": "Um tema claro e brilhante."
+    },
+    "darkTheme": {
+      "name": "Tema Escuro",
+      "description": "Um tema escuro e sombrio."
+    },
+    "applyButton": "Aplicar Tema"
+  }
+}
