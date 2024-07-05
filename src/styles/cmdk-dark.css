@@ -1,0 +1,41 @@
+/* dark-theme.css */
+.cmdk-root {
+    background-color: #2e2e2e;
+    color: #ffffff;
+    border: 1px solid #444444;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cmdk-item {
+    background-color: #3e3e3e;
+    color: #b3b3b3;
+    padding: 10px 15px;
+    border-bottom: 1px solid #4a4a4a;
+  }
+  
+  .cmdk-item:hover {
+    background-color: #505050;
+  }
+  
+  .cmdk-separator {
+    background-color: #4e4e4e;
+    height: 1px;
+    margin: 5px 0;
+  }
+  
+  .cmdk-input {
+    background-color: #2e2e2e;
+    color: #ffffff;
+    border: 1px solid #444444;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .cmdk-header {
+    background-color: #3a3a3a;
+    color: #888888;
+    padding: 10px 15px;
+    font-weight: bold;
+  }
+  

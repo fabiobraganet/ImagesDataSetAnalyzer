@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body, #root {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .app-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+.top {
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+    top: 0;
+    overflow: hidden;
+    height: 56px;
+    width: 100%;
+    padding: 4px;
+  }
+
+  .top .topStart {
+    border: none;
+    max-width: 180px;
+    margin-left: 8px;
+    margin-right: 16px;
+  }
+
+  .top .topCenter {
+    display: flex;
+    position: sticky;
+    justify-content: stretch; 
+    justify-items: center;
+    align-items: start;
+    vertical-align: middle;
+    width: Calc(100% - 500px);
+    border: solid 0px #000;
+  }
+
+
+  .top .inputCommand {
+    display: flex;
+    align-items: start;
+    vertical-align: middle;
+    margin-left: 16px;
+    width: 364px;
+  }
+
+  .top .topEnd {
+    align-items: End;
+    min-width: 248px;
+    padding-left: 16px;
+  }
+
+  .MenuIcons {
+    display: inline; 
+    align-Items: normal;
+  }
+
+  .middle {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    height: calc(100vh - 112px);
+    max-height: 100vh;
+  }
+
+  .base {
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+    bottom: 0 !important;
+    overflow: hidden;
+    height: 56px;
+    width: 100%;
+    padding: 4px;
+    background-color: #ccc !important;
+  }
+
+  .ant-layout-footer {
+    padding: 0px;    
+  }
