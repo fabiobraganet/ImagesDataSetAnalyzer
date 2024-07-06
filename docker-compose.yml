@@ -1,0 +1,53 @@
+version: '3.8'
+
+services:
+  postgres:
+    build:
+      context: ./docker/Postgres
+      dockerfile: Dockerfile
+    container_name: serverdb
+    environment:
+      POSTGRES_DB: KeyCloakDB
+      POSTGRES_USER: administrator
+      POSTGRES_PASSWORD: administrator
+    ports:
+      - '30000:5432'
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  keycloak:
+    build:
+      context: ./docker/Keycloak
+      dockerfile: Dockerfile
+    container_name: keycloak
+    environment:
+      KEYCLOAK_ADMIN: administrator
+      KEYCLOAK_ADMIN_PASSWORD: administrator
+      DB_VENDOR: postgres
+      DB_ADDR: serverdb
+      DB_DATABASE: KeyCloakDB
+      DB_USER: administrator
+      DB_PASSWORD: administrator
+    ports:
+      - '50000:8080'
+    depends_on:
+      - postgres
+
+  minio:
+    build:
+      context: ./docker/MinIO
+      dockerfile: Dockerfile
+    container_name: minio
+    environment:
+      MINIO_ROOT_USER: administrator
+      MINIO_ROOT_PASSWORD: administrator
+    ports:
+      - '9000:9000'
+      - '9001:9001'
+    volumes:
+      - minio_data:/data
+    command: server /data --console-address ":9001"
+
+volumes:
+  postgres_data:
+  minio_data:

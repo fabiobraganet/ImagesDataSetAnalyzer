@@ -1,8 +1,8 @@
 #!/bin/bash
 
 KEYCLOAK_URL="http://localhost:50000"
-ADMIN_USER="admin"
-ADMIN_PASSWORD="admin"
+ADMIN_USER="administrator"
+ADMIN_PASSWORD="administrator"
 JSON_FILE_PATH="$1"
 
 # Função para obter token de acesso
