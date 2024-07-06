@@ -1,7 +1,7 @@
 {
   "id": "2ac3d40b-4984-49f3-9eed-baac96e623ce",
-  "realm": "Leony Neto",
-  "displayName": "Leony Neto & Associados",
+  "realm": "RealmTeste",
+  "displayName": "Realm de Teste",
   "notBefore": 0,
   "defaultSignatureAlgorithm": "RS256",
   "revokeRefreshToken": false,
@@ -431,8 +431,7 @@
           "containerId": "565b942b-97b0-4dd8-a030-4d17e1da209b",
           "attributes": {}
         }
-      ],
-      "frontend-client": []
+      ]
     }
   },
   "groups": [
@@ -865,15 +864,15 @@
     },
     {
       "id": "476554bd-bbf9-4b6d-99fb-99dacf7e6397",
-      "clientId": "frontend-client",
-      "name": "Frontend Client",
-      "rootUrl": "http://localhost:8080",
+      "clientId": "ImagesDataSetAnalyzer",
+      "name": "Images DataSet Analyzer",
+      "rootUrl": "http://localhost:3001",
       "baseUrl": "/",
       "surrogateAuthRequired": false,
       "enabled": true,
       "alwaysDisplayInConsole": false,
       "clientAuthenticatorType": "client-secret",
-      "redirectUris": ["http://localhost:8080/*"],
+      "redirectUris": ["http://localhost:3001/*"],
       "webOrigins": ["*"],
       "notBefore": 0,
       "bearerOnly": false,

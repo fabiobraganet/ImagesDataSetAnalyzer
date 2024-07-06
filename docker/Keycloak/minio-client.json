@@ -1,0 +1,74 @@
+{
+    "clientId": "minio-client",
+    "secret": "minio-client-secret",
+    "enabled": true,
+    "redirectUris": [
+      "http://minio:9001/*"
+    ],
+    "webOrigins": [
+      "http://minio:9001"
+    ],
+    "directAccessGrantsEnabled": true,
+    "protocol": "openid-connect",
+    "attributes": {
+      "post.logout.redirect.uris": "http://minio:9001/*",
+      "oauth2.device.authorization.grant.enabled": "false",
+      "backchannel.logout.session.required": "true",
+      "exclude.session.state.from.auth.response": "false",
+      "saml.assertion.signature": "false",
+      "saml.multivalued.roles": "false",
+      "client.secret.expiration": "0",
+      "client.credentials.use.refresh.token": "true",
+      "use.refresh.tokens": "true",
+      "skip.refresh.token.delete": "false",
+      "oauth2.device.authorization.flow.enabled": "false",
+      "id.token.as.detached.signature": "false",
+      "saml.server.signature": "false",
+      "saml.artifact.binding.identifier": "false",
+      "saml.force.post.binding": "false",
+      "saml.assertion.encryption": "false",
+      "backchannel.logout.url": "",
+      "client.secret": "",
+      "client.authenticator.type": "client-secret",
+      "use.refresh.tokens.enabled": "true",
+      "client.use.jwks.url": "false",
+      "saml.client.signature": "false",
+      "saml.encrypt": "false",
+      "oauth2.device.auth.session.url.param.enabled": "false",
+      "client.secret.expiration.time": "0"
+    },
+    "authenticationFlowBindingOverrides": {},
+    "fullScopeAllowed": true,
+    "nodeReRegistrationTimeout": -1,
+    "protocolMappers": [
+      {
+        "name": "audience",
+        "protocol": "openid-connect",
+        "protocolMapper": "oidc-audience-mapper",
+        "consentRequired": false,
+        "config": {
+          "included.client.audience": "account",
+          "id.token.claim": "false",
+          "access.token.claim": "true"
+        }
+      }
+    ],
+    "defaultClientScopes": [
+      "web-origins",
+      "role_list",
+      "profile",
+      "email"
+    ],
+    "optionalClientScopes": [
+      "address",
+      "phone",
+      "offline_access",
+      "microprofile-jwt"
+    ],
+    "access": {
+      "view": true,
+      "configure": true,
+      "manage": true
+    }
+  }
+  
